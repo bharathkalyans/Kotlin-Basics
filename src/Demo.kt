@@ -26,12 +26,37 @@ fun main(args: Array<String>) {
 //    println(x)
 
 
-    val name :String = "Bharath"
-    var sentence = "My name is ${name.replace("a","r",false)}"
-    println(sentence)
+//    val name :String = "Bharath"
+//    var sentence = "My name is ${name.replace("a","r",false)}"
+//    println(sentence)
+//
+//    println(maX(12,23232434))
+
+
+
+    val items = listOf("apple", "banana", "kiwifruit")
+    var i = 0
+    for (item in items) {
+        println(item)
+    }
+
+    val item = listOf("apple", "banana", "kiwifruit")
+    for (index in item.indices) {
+        println("item at $index is ${item[index]}")
+    }
+
+
+
+
+
+
 
 }
 
+
+fun sub( a : Int ,b: Int) = a-b
+
+fun maX(a :Int ,b:Int) = if (a>b) a else b
 
 fun sum(a : Int, b: Int, c: Int =2){
     println("Sum is ${a+b+c}")
