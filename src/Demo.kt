@@ -32,27 +32,81 @@ fun main(args: Array<String>) {
 //
 //    println(maX(12,23232434))
 
+//    val items = listOf("apple", "banana", "kiwifruit")
+//    var i = 0
+//    for (item in items) {
+//        println(item)
+//    }
+//
+//    val item = listOf("apple", "banana", "kiwifruit")
+//    for (index in item.indices) {
+//        println("item at $index is ${item[index]}")
+//    }
+
+//    var y=90
+//    for (x in 0..7){
+//        println(x)
+//    }
+//    for (x in 1..10 step 2) {
+//        print(x)
+//    }
+//    println()
+//    for (x in 9 downTo 0 step 3) {
+//        print(x)
+//    }
+//
+//   val s =  eliminate(-1212)
+//    print(s)
 
 
-    val items = listOf("apple", "banana", "kiwifruit")
-    var i = 0
-    for (item in items) {
-        println(item)
+//
+//print(good(1.22323232323F))
+//
+//print(good(1))
+
+
+    val nameDict = mutableMapOf<String,String>("Bharath" to "Kalyan ","Ananth " to "Reddy")
+
+    for ((k, v) in nameDict) {
+        println("$k -> $v")
     }
 
-    val item = listOf("apple", "banana", "kiwifruit")
-    for (index in item.indices) {
-        println("item at $index is ${item[index]}")
-    }
 
+var a=12
+    var b=23
+    a=b.also { b=a }
 
-
-
-
-
+    print("a :: $a and b :: $b")
 
 }
 
+fun good(obj : Any): Any {
+
+    if (obj is Int)
+        return "Its a Integer"
+    else
+        return "${obj.javaClass}"
+}
+
+fun eliminate(a :Int) : Int?{
+    if (a >= 0)
+        return 1
+
+    return null
+    //Null Checks
+}
+
+//Using when instead of traditional Switch Statement.
+fun describe(obj: Any): String {
+    return when (obj) {
+        1 -> "One"
+        "Hello" -> "Greeting"
+        is Long -> "Long"
+        !is String -> "Not a string"
+        else -> "Unknown"
+    }
+
+}
 
 fun sub( a : Int ,b: Int) = a-b
 
