@@ -10,6 +10,10 @@ class  Rectangle(var height: Double, var length : Double) : Shape() {
 
 }
 
+fun printHello(name : String,age : Int ): String {
+    return "Hello ,Good Morning $name";
+}
+
 fun main(args: Array<String>) {
 //    println(sum(12,23))
 //
@@ -72,7 +76,7 @@ fun main(args: Array<String>) {
     }
 
 
-var a=12
+    var a=12
     var b=23
     a=b.also { b=a }
 
