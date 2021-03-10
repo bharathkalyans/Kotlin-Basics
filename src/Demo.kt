@@ -1,3 +1,5 @@
+import demo.*;
+
 //fun main(args : Array<String>){
 //    println("Hello World")
 //
@@ -15,6 +17,15 @@ fun printHello(name : String,age : Int ): String {
 }
 
 fun main(args: Array<String>) {
+
+    var arra = arrayOf(1,2,3)
+    var ae = intArrayOf(2,2,2,2)
+    var er = Array(10){}
+
+//    println(1 + 2)
+//    println(2_500_000_000L - 1L)
+//    println(3.14 * 2.71)
+//    println(10.0 / 3)
 //    println(sum(12,23))
 //
 //    nigga(12)
@@ -69,18 +80,18 @@ fun main(args: Array<String>) {
 //print(good(1))
 
 
-    val nameDict = mutableMapOf<String,String>("Bharath" to "Kalyan ","Ananth " to "Reddy")
-
-    for ((k, v) in nameDict) {
-        println("$k -> $v")
-    }
-
-
-    var a=12
-    var b=23
-    a=b.also { b=a }
-
-    print("a :: $a and b :: $b")
+//    val nameDict = mutableMapOf<String,String>("Bharath" to "Kalyan ","Ananth " to "Reddy")
+//
+//    for ((k, v) in nameDict) {
+//        println("$k -> $v")
+//    }
+//
+//
+//    var a=12
+//    var b=23
+//    a=b.also { b=a }
+//
+//    print("a :: $a and b :: $b")
 
 }
 
