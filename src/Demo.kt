@@ -1,16 +1,8 @@
-import demo.*;
 
-//fun main(args : Array<String>){
-//    println("Hello World")
+//class  Rectangle(var height: Double, var length : Double) : Shape() {
+//    var perimeter = (height+length) * 2
 //
 //}
-
-open class Shape
-
-class  Rectangle(var height: Double, var length : Double) : Shape() {
-    var perimeter = (height+length) * 2
-
-}
 
 fun printHello(name : String,age : Int ): String {
     return "Hello ,Good Morning $name";
