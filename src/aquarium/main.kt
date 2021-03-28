@@ -2,11 +2,22 @@ package aquarium
 
 fun main(args : Array<String>){
 
-    buildAquarium()
+
+    var name = "bHARATH"
+   var changedName=  changeName(name)
+
+    print(changedName)
 
 
 }
 
+class JavaRun {
+
+}
+
+fun changeName( name : String):  String{
+   return  name.capitalize()
+}
 
 
 fun buildAquarium(){
