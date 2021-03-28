@@ -58,11 +58,56 @@ data class Decorations(var rock : String){
 
 }
 
+fun FishEat.eat(){
+}
+fun String.hasSpace(){}
+
 fun main(args:Array<String>){
     val d1= Decorations("Granite")
     println(d1)
+
+
+
+    val map = mapOf("Bharath" to 1,"Kalyan" to 2,"Reddy " to 2)
+
+    println(map["Bharath"])
+
+
+
+   loop@ for (i in 1..100)
+        for (j in 1..100){
+            print("$j  ")
+            if (i> 10) break@loop
+        }
+
+
 }
 
+fun getName(name : String): String{
+    return name.reversed()
+}
+
+
+
+
+object DickWalesHummer{
+     val Name: String = "Dick Wales"
+
+    fun getName() {
+
+    }
+
+}
+
+enum class RGB(val color : Int){
+    RED(0xFF0000),
+    GREEN(0xfff000)
+
+}
+
+
+
+val pairsExample = "Bharath" to "Kalyan"
 
 
 
