@@ -1,6 +1,5 @@
-package AndroidDevelopment
+package KotlinUdacity
 
-import java.util.*;
 import kotlin.random.Random
 
 
