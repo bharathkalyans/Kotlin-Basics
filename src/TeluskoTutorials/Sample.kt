@@ -20,7 +20,14 @@ fun main(args:Array<String>){
     val age: Int = Integer.valueOf(readLine())
     val scanner  = Scanner(System.`in`)
 
-    val phoneNumber : Int
+
+
+
+    //Calling java Class
+    //Working on Java and Kotlin InterOperability
+    val alien2 : AliensJavaClass = AliensJavaClass()
+    alien2.alienName = "Darkseid"
+    println("Alien name is :: ${alien2.alienName}")
 
 
 }
