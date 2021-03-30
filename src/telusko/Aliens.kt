@@ -1,4 +1,4 @@
-package TeluskoTutorials
+package telusko
 
 import java.util.*
 

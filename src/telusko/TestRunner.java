@@ -1,4 +1,4 @@
-package TeluskoTutorials;
+package telusko;
 
 //import static TeluskoTutorials.SampleKt.*;
 

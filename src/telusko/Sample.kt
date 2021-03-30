@@ -1,7 +1,7 @@
 @file:JvmName("SampleTest")//This will calling Kotlin File name to whatever you want!
-package TeluskoTutorials
+package telusko
 
-import TeluskoTutorials.TestRunner.printName
+import telusko.TestRunner.printName
 
 
 
@@ -38,6 +38,8 @@ fun main(args:Array<String>){
     val myName = printName("Bharath")
 
 
+    var str : String = "101"
+    var roomNumber : Int = str.toInt() //Integer.parseInt(str) -- > Using Java Snippet
 
 
 
