@@ -45,7 +45,7 @@ fun main(args:Array<String>){
 
 fun add(a : Int,b : Float): Float =  a.plus(b)
 
-
+@JvmOverloads//It overloads the Second parameter,So no need to mention the Second parameter
 fun add(a : Int ,b : Int =10): Int = a+b
 
 
