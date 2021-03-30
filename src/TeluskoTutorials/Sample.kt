@@ -1,5 +1,6 @@
 package TeluskoTutorials
 
+import TeluskoTutorials.TestRunner.printName
 import java.util.Scanner;
 
 
@@ -15,12 +16,10 @@ fun main(args:Array<String>){
     //Or the Normal Way.
     println("Name of the ALien is  ${alien1.alienName}")
 
-
-    val name: String? = readLine();
-    val age: Int = Integer.valueOf(readLine())
-    val scanner  = Scanner(System.`in`)
-
-
+//    println("Enter a Name ::")
+//    val name: String? = readLine()
+//    val age: Int = Integer.valueOf(readLine())
+//    val scanner  = Scanner(System.`in`)
 
 
     //Calling java Class
@@ -30,5 +29,31 @@ fun main(args:Array<String>){
     println("Alien name is :: ${alien2.alienName}")
 
 
+
+    println(add(2,2.11212121f))
+
+    println("Result is ${add(100 )}")
+
+    val myName = printName("Bharath")
+
+
+
+
+
 }
+
+fun add(a : Int,b : Float): Float =  a.plus(b)
+
+
+fun add(a : Int ,b : Int =10): Int = a+b
+
+
+
+
+
+
+
+
+
+
 
