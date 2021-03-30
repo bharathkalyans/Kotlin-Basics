@@ -31,7 +31,7 @@ fun main(args:Array<String>){
 
 
 
-    println(add(2,2.11212121f))
+    println(add(a = 2,b = 2.11212121f))
 
     println("Result is ${add(100 )}")
 
