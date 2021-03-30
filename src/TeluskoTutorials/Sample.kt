@@ -1,7 +1,8 @@
+@file:JvmName("SampleTest")//This will calling Kotlin File name to whatever you want!
 package TeluskoTutorials
 
 import TeluskoTutorials.TestRunner.printName
-import java.util.Scanner;
+
 
 
 class Sample
