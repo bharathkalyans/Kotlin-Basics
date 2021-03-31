@@ -1,8 +1,9 @@
-@file:JvmName("SampleTest")//This will calling Kotlin File name to whatever you want!
+//@file:JvmName("SampleTest")//This will calling Kotlin File name to whatever you want!
 package telusko
 
 import telusko.TestRunner.printName
-
+import java.lang.ArithmeticException
+import java.lang.NumberFormatException
 
 
 class Sample
@@ -41,6 +42,9 @@ fun main(args:Array<String>){
     var str : String = "101"
     var roomNumber : Int = str.toInt() //Integer.parseInt(str) -- > Using Java Snippet
 
+    println(convertStringToInteger("23a"))
+
+
 
 
 }
@@ -51,8 +55,25 @@ fun add(a : Int,b : Float): Float =  a.plus(b)
 fun add(a : Int ,b : Int =10): Int = a+b
 
 
+fun convertStringToInteger(string : String):Int {
+    var num : Int = 0
+    try {
+        num = string.toInt();
+    }catch (e : NumberFormatException){
+        println("For God Sake Enter Correct Input !!!")
+    }
+    return num
+}
 
+fun DemoThing(Number : Int): Int {
 
+    val num : Int = try {
+        Number/0;
+    }catch (e : ArithmeticException){
+        -1
+    }
+    return num
+}
 
 
 
