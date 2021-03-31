@@ -1,6 +1,8 @@
 package telusko
 
-fun main(){
+import java.math.BigInteger
+
+fun main(args : Array<String>){
 
     var a1 = Aliens();
     a1.alienName = "Gurrr"
@@ -16,6 +18,9 @@ fun main(){
     var a5 = a4 + a2
     a5.alienName
 
+    val num = BigInteger("40")
+    println(factorial(num))
+
 }
 
 //Extension Function of Aliens Class , Adding Infix Keyword and Operator For Operator Overloading.
@@ -28,3 +33,10 @@ infix operator fun Aliens.plus(a : Aliens) : Aliens{
     return newAlien
 }
 
+fun factorial(num : BigInteger) :BigInteger
+{
+     if (num == BigInteger.ZERO)
+        return BigInteger.ZERO
+     else
+        return num * factorial(num - BigInteger.ONE)
+}
