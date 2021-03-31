@@ -1,6 +1,7 @@
 package telusko
 
-class Human constructor(var n: String){
+//This type of Constructors are called Primary Constructors.
+class Human (var n: String){
 
     var name : String = n
     fun think(){
