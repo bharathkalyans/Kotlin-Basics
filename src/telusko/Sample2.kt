@@ -19,7 +19,7 @@ fun main(){
 }
 
 //Extension Function of Aliens Class , Adding Infix Keyword and Operator For Operator Overloading.
-
+//Also Infix must have only one Parameter.
 infix operator fun Aliens.plus(a : Aliens) : Aliens{
     val newAlien = Aliens()
 
