@@ -18,8 +18,8 @@ fun main(args : Array<String>){
     var a5 = a4 + a2
     a5.alienName
 
-    val num = BigInteger("40")
-    println(factorial(num))
+    val num = BigInteger.valueOf(70000)
+    println(factorial(num,BigInteger.ONE))
 
 }
 
@@ -33,10 +33,11 @@ infix operator fun Aliens.plus(a : Aliens) : Aliens{
     return newAlien
 }
 
-fun factorial(num : BigInteger) :BigInteger
-{
-     if (num == BigInteger.ZERO)
-        return BigInteger.ZERO
-     else
-        return num * factorial(num - BigInteger.ONE)
+tailrec fun factorial(num : BigInteger, result : BigInteger) :BigInteger {
+     if (num == BigInteger.ZERO){
+        return result
+     }
+     else{
+        return factorial(num - BigInteger.ONE, num * result)
+     }
 }
