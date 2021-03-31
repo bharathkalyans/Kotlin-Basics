@@ -3,10 +3,10 @@ package telusko
 import java.util.*
 import kotlin.random.Random
 //This type of Constructors are called Primary Constructors.
-class Human (var n: String = randomID()){
+open class Human (var n: String = randomID()){
 
     private var age: Int = 0
-    var name : String = n
+    open var name : String = n
     private var gender : String = "";
     constructor(age : Int, name : String) : this (name){
         this.age = age;
@@ -24,21 +24,30 @@ class Human (var n: String = randomID()){
 //        println("Human is Created !")
 //    }
 
-    fun think(){
+    open fun think(){
         println("Time to Work Hard!! $name as your age is $age and gender is $gender")
     }
 
 }
+
+
+class Alien (name : String): Human(){
+
+    override var name = name
+
+    override fun think(){
+        println("Thinking like an Alien !")
+    }
+}
+
+
 fun main(args : Array<String>){
 
-    var h2 = Human("Derozes")
-    var h1 = Human(20,"Raghu","Male")
+    var h1 = Human(20,"Draco","Male")
 
-    var h3 = Human(22,"Rameses II")
-    
-    h2.think()
-    h1.think()
-    h3.think()
+    var a1 = Alien("Dracker")
+
+
 
 }
 
