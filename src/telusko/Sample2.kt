@@ -13,14 +13,18 @@ fun main(){
 
     var a4 = a1 plus a3 // Add infix keyword before the Function to activate its Infix Property.
 
+    var a5 = a4 + a2
+    a5.alienName
 
 }
 
-//Extension Function of Aliens Class and Adding Infix Keyword.
-infix fun Aliens.plus(a : Aliens) : Aliens{
+//Extension Function of Aliens Class , Adding Infix Keyword and Operator For Operator Overloading.
+
+infix operator fun Aliens.plus(a : Aliens) : Aliens{
     val newAlien = Aliens()
 
     newAlien.alienName = this.alienName + a.alienName
 
     return newAlien
 }
+
