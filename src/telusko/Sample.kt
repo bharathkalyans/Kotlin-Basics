@@ -42,7 +42,6 @@ fun main(args:Array<String>){
     var str : String = "101"
     var roomNumber : Int = str.toInt() //Integer.parseInt(str) -- > Using Java Snippet
 
-    println(convertStringToInteger("23a"))
 
 
 
