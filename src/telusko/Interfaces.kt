@@ -3,6 +3,10 @@ package telusko
 
 interface A{
     fun think()
+    fun notThinking(){
+        //Implement a function so in future it doesn't crash Classes
+        //implementing this Interface.
+    }
 }
 
 interface B{
